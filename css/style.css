@@ -154,6 +154,7 @@ h1, h2 {
   font-family: "Passion One", sans-serif;
   color: #fff;
   font-weight: 700;
+  line-height: 1.875rem;
 }
 
 p {
@@ -217,14 +218,14 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background: #0C1D3E;
+  background-color: #0C1D3E;
 }
 @media screen and (min-width: 22.5rem) {
   .main_content {
     padding-top: 3.75rem;
   }
 }
-@media screen and (min-width: 96rem) {
+@media screen and (min-width: 80rem) {
   .main_content {
     background-image: url("../img/desktop_bg.jpg");
   }
@@ -258,7 +259,7 @@ img {
 .offer_title {
   font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 0.625rem;
+  margin-bottom: 1.25rem;
 }
 @media screen and (min-width: 22.5rem) {
   .offer_title {
@@ -307,7 +308,7 @@ img {
     right: 1.25rem;
   }
 }
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 80rem) {
   .wheel_box {
     margin-right: -48.5vmin;
     margin-top: calc((100vh - 100vmin) / 2);
@@ -350,7 +351,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(50, 63, 77, 0.9);
   z-index: 1000;
   display: none;
   opacity: 0;
@@ -367,13 +368,13 @@ img {
   background: #fff;
   flex-direction: column;
   gap: 1rem;
-  padding: 1.25rem 0;
+  padding: 1.875rem 0;
 }
 @media screen and (min-width: 768px) {
   .pop_up_content {
     flex-direction: row;
     gap: 2rem;
-    max-width: 37.5rem;
+    max-width: 43.75rem;
     padding: 2.5rem;
   }
 }
@@ -418,12 +419,11 @@ img {
 .pop_up_img {
   width: 12.5rem;
   height: 12.5rem;
-  background: #c4c4c4;
 }
 @media screen and (min-width: 768px) {
   .pop_up_img {
-    width: 14.75rem;
-    height: 14.75rem;
+    width: 14.875rem;
+    height: auto;
   }
 }
 

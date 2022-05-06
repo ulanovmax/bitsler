@@ -32,6 +32,7 @@ h1,h2 {
   font-family: "Passion One", sans-serif;
   color: #fff;
   font-weight: 700;
+  line-height: rem(30);
 }
 
 p {
@@ -93,12 +94,11 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background: #0C1D3E;
+  background-color: #0C1D3E;
   @media screen and (min-width: rem(360)) {
     padding-top: rem(60);
   }
-  
-  @media screen and (min-width: rem(1536)) {
+  @media screen and (min-width: rem(1280)) {
     background-image: url('../img/desktop_bg.jpg');
   }
 }
@@ -128,7 +128,7 @@ img {
 .offer_title {
   font-size: rem(40);
   color: #fff;
-  margin-bottom: rem(10);
+  margin-bottom: rem(20);
   @media screen and (min-width: rem(360)) {
     font-size: rem(48);  
   }
@@ -166,7 +166,7 @@ img {
   @media screen and (min-width: rem(768)) {
     right: rem(20);
   }
-  @media screen and (min-width: rem(1024)) {
+  @media screen and (min-width: rem(1280)) {
     margin-right: -48.5vmin;
     margin-top: calc((100vh - 100vmin) / 2);
   }
@@ -208,7 +208,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba($color: #000000, $alpha: 0.9);
+  background: rgba(50, 63, 77, 0.9);
   z-index: 1000;
   display: none;
   opacity: 0;
@@ -225,11 +225,11 @@ img {
   background: #fff;
   flex-direction: column;
   gap: rem(16);
-  padding: rem(20) 0;
+  padding: rem(30) 0;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     gap: rem(32);
-    max-width: rem(600);
+    max-width: rem(700);
     padding: rem(40);
   }
   @media screen and (min-width: 1024px) {
@@ -270,9 +270,8 @@ img {
 .pop_up_img {
   width: rem(200);
   height: rem(200);
-  background: #c4c4c4;
   @media screen and (min-width: 768px) {
-    width: rem(236);
-    height: rem(236);
+    width: rem(238);
+    height: auto;
   }
 }

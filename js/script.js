@@ -6,7 +6,7 @@ const wheel = document.querySelector('.wheel_box');
 
 spinBtn.addEventListener('click', wheelAnimate);
 
-if (window.matchMedia('(max-width: 1023px)').matches) {
+if (window.matchMedia('(max-width: 1279px)').matches) {
   spinBtn.addEventListener('click', () => {
     move('.wheel_box.mobile').set('margin-top', 'calc((100vh - 100vmin) / 2)').duration('0.8s').delay('0.3s').end();
   });
