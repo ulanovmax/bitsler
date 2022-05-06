@@ -1,0 +1,430 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+/*
+Theme Name: Keep Austin Sexy
+Author: Nord Softworks
+Version: 1.0.0
+*/
+/* css-reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  overflow: hidden;
+}
+
+h1, h2 {
+  font-family: "Passion One", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+span, a {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100rem;
+  padding: 0 1.25rem;
+}
+@media screen and (min-width: 80rem) {
+  .container {
+    padding: 0 1.875rem;
+  }
+}
+
+.btn {
+  background: #FF7F27;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 13.75rem;
+  width: 100%;
+  height: 3.625rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #ff6f0f;
+  transform: scale(1.05);
+}
+.btn:active {
+  transform: scale(0.9);
+}
+@media screen and (min-width: 48rem) {
+  .btn {
+    max-width: 18.75rem;
+    height: 4.375rem;
+    font-size: 1.625rem;
+  }
+}
+
+.main_content {
+  padding-top: 1.875rem;
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: #0C1D3E;
+}
+@media screen and (min-width: 22.5rem) {
+  .main_content {
+    padding-top: 3.75rem;
+  }
+}
+@media screen and (min-width: 96rem) {
+  .main_content {
+    background-image: url("../img/desktop_bg.jpg");
+  }
+}
+
+.logo {
+  width: 8.75rem;
+  height: 2.5rem;
+  margin-bottom: 1.875rem;
+}
+@media screen and (min-width: 22.5rem) {
+  .logo {
+    width: 12.5rem;
+    height: 3.625rem;
+    margin-bottom: 3.125rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .logo {
+    margin-bottom: 7.5rem;
+    width: 15.75rem;
+    height: 4.375rem;
+    margin-bottom: 8.75rem;
+  }
+}
+
+.offer {
+  color: #BBDBFD;
+}
+
+.offer_title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 0.625rem;
+}
+@media screen and (min-width: 22.5rem) {
+  .offer_title {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .offer_title {
+    font-size: 3.875rem;
+  }
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 48rem) {
+  .subtitle {
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.offer_text {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 48rem) {
+  .offer_text {
+    font-size: 1.25rem;
+  }
+}
+
+.wheel_box {
+  width: 100vmin;
+  height: 100vmin;
+  position: fixed;
+  right: 0.625rem;
+  top: 0;
+  margin-top: calc((200vh - 100vmin) / 2);
+  z-index: 999;
+}
+@media screen and (min-width: 48rem) {
+  .wheel_box {
+    right: 1.25rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .wheel_box {
+    margin-right: -48.5vmin;
+    margin-top: calc((100vh - 100vmin) / 2);
+  }
+}
+
+.wheel {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 6vmin;
+  right: 0;
+  bottom: 0;
+  width: 84%;
+  height: 84%;
+}
+
+.wheel_bg {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 3vmin;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.wheel_wrap {
+  position: relative;
+  width: 100vmin;
+  height: 100vmin;
+}
+
+.pop_up {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: none;
+  opacity: 0;
+}
+
+.pop_up_content {
+  max-width: 18.375rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: #fff;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem 0;
+}
+@media screen and (min-width: 768px) {
+  .pop_up_content {
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 37.5rem;
+    padding: 2.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pop_up_content {
+    padding: 5.75rem 0;
+    max-width: 57.125rem;
+  }
+}
+
+.pop_up_offer {
+  text-align: center;
+}
+.pop_up_offer h2 {
+  font-size: 2.625rem;
+  color: #323F4D;
+  margin-bottom: 1.875rem;
+}
+.pop_up_offer .subtitle {
+  margin-bottom: 0.625rem;
+  color: #323F4D;
+}
+.pop_up_offer .offer_text {
+  color: #A6A6A6;
+}
+.pop_up_offer .btn {
+  max-width: 19.75rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .pop_up_offer {
+    text-align: left;
+  }
+  .pop_up_offer h2 {
+    font-size: 3.75rem;
+  }
+  .pop_up_offer .btn {
+    margin: 0;
+  }
+}
+
+.pop_up_img {
+  width: 12.5rem;
+  height: 12.5rem;
+  background: #c4c4c4;
+}
+@media screen and (min-width: 768px) {
+  .pop_up_img {
+    width: 14.75rem;
+    height: 14.75rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
