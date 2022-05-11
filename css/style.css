@@ -195,6 +195,8 @@ img {
   border-radius: 0.5rem;
   transition: all 0.3s ease;
   cursor: pointer;
+  -webkit-animation: btn 2s ease-in-out infinite;
+  animation: btn 2s ease-in-out infinite;
 }
 .btn:hover {
   background: #ff6f0f;
@@ -211,6 +213,20 @@ img {
   }
 }
 
+@keyframes btn {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.9) rotate(0.0001deg) translateZ(0);
+    transform: scale(0.9) rotate(0.0001deg) translateZ(0);
+  }
+  to {
+    -webkit-transform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0);
+  }
+}
 .main_content {
   padding-top: 1.875rem;
   position: relative;
@@ -402,7 +418,7 @@ img {
   margin-bottom: 1.875rem;
 }
 .pop_up_offer .subtitle {
-  margin-bottom: 0.625rem;
+  margin-bottom: 1.5rem;
   color: #fff;
 }
 .pop_up_offer .btn {
