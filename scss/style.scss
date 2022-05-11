@@ -276,6 +276,7 @@ img {
   .btn {
     max-width: rem(316);
     margin: 0 auto;
+    animation: blink 0.5s infinite;
   }
   @media screen and (min-width: rem(768)) {
     text-align: left;
@@ -294,5 +295,16 @@ img {
   @media screen and (min-width: rem(768)) {
     width: rem(238);
     height: auto;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    background: #FF7F27;
+  }
+  75%,
+  100% {
+    background: #ff964d;
   }
 }

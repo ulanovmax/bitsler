@@ -424,6 +424,7 @@ img {
 .pop_up_offer .btn {
   max-width: 19.75rem;
   margin: 0 auto;
+  animation: blink 0.5s infinite;
 }
 @media screen and (min-width: 48rem) {
   .pop_up_offer {
@@ -445,6 +446,15 @@ img {
   .pop_up_img {
     width: 14.875rem;
     height: auto;
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    background: #FF7F27;
+  }
+  75%, 100% {
+    background: #ff964d;
   }
 }
 
