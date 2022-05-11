@@ -4,7 +4,7 @@
 
 $base-font-size: 16;
 
-// Function Rem to Px
+// Function Rem to Px  
 
 @function rem($size) {
   @if ($size % 2 !=0 and $size !=1) {
@@ -185,6 +185,7 @@ img {
   bottom: 0;
   width: 84%;
   height: 84%;
+  z-index: -1;
 }
 
 .wheel_bg {
@@ -194,7 +195,7 @@ img {
   left: 3vmin;
   width: 100%;
   height: 100%;
-  z-index: 5;
+  z-index: 10;
 }
 
 .wheel_wrap {
@@ -226,7 +227,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0;
-  background: #fff;
+  background: url('../img/popup_bg.jpg') no-repeat center / cover;
   flex-direction: column;
   gap: rem(16);
   padding: rem(30) 0;
@@ -246,15 +247,12 @@ img {
   text-align: center;
   h2 {
     font-size: rem(42);
-    color: #323F4D;
+    color: #fff;
     margin-bottom: rem(30);
   }
   .subtitle {
     margin-bottom: rem(10);
-    color: #323F4D;
-  }
-  .offer_text {
-    color: #A6A6A6;
+    color: #fff;
   }
   .btn {
     max-width: rem(316);

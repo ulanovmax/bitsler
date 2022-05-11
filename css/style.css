@@ -331,6 +331,7 @@ img {
   bottom: 0;
   width: 84%;
   height: 84%;
+  z-index: -1;
 }
 
 .wheel_bg {
@@ -340,7 +341,7 @@ img {
   left: 3vmin;
   width: 100%;
   height: 100%;
-  z-index: 5;
+  z-index: 10;
 }
 
 .wheel_wrap {
@@ -372,7 +373,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0;
-  background: #fff;
+  background: url("../img/popup_bg.jpg") no-repeat center/cover;
   flex-direction: column;
   gap: 1rem;
   padding: 1.875rem 0;
@@ -397,15 +398,12 @@ img {
 }
 .pop_up_offer h2 {
   font-size: 2.625rem;
-  color: #323F4D;
+  color: #fff;
   margin-bottom: 1.875rem;
 }
 .pop_up_offer .subtitle {
   margin-bottom: 0.625rem;
-  color: #323F4D;
-}
-.pop_up_offer .offer_text {
-  color: #A6A6A6;
+  color: #fff;
 }
 .pop_up_offer .btn {
   max-width: 19.75rem;
