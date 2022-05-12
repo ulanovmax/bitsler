@@ -69,6 +69,8 @@ img {
   width: 100%;
   height: rem(58);
   border-radius: rem(8);
+  z-index: 1000;
+  position: relative;
   transition: all $trans ease;
   cursor: pointer;
   -webkit-animation: btn 2s ease-in-out infinite;
@@ -113,7 +115,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom left;
-  background-color: #0C1D3E;
+  background-image: url('../img/mobile_bg.jpg');
   @media screen and (min-width: rem(360)) {
     padding-top: rem(60);
   }
@@ -276,7 +278,7 @@ img {
   .btn {
     max-width: rem(316);
     margin: 0 auto;
-    animation: blink 0.5s infinite;
+    animation: blink 1.5s infinite;
   }
   @media screen and (min-width: rem(768)) {
     text-align: left;

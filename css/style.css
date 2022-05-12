@@ -193,6 +193,8 @@ img {
   width: 100%;
   height: 3.625rem;
   border-radius: 0.5rem;
+  z-index: 1000;
+  position: relative;
   transition: all 0.3s ease;
   cursor: pointer;
   -webkit-animation: btn 2s ease-in-out infinite;
@@ -234,7 +236,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom left;
-  background-color: #0C1D3E;
+  background-image: url("../img/mobile_bg.jpg");
 }
 @media screen and (min-width: 22.5rem) {
   .main_content {
@@ -424,7 +426,7 @@ img {
 .pop_up_offer .btn {
   max-width: 19.75rem;
   margin: 0 auto;
-  animation: blink 0.5s infinite;
+  animation: blink 1.5s infinite;
 }
 @media screen and (min-width: 48rem) {
   .pop_up_offer {

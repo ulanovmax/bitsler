@@ -6,17 +6,29 @@ const wheel = document.querySelector('.wheel_box');
 
 spinBtn.addEventListener('click', wheelAnimate);
 
-if (window.matchMedia('(max-width: 1279px)').matches) {
-  spinBtn.addEventListener('click', () => {
-    move('.wheel_box.mobile').set('margin-top', 'calc((100vh - 100vmin) / 2)').duration('0.8s').delay('0.3s').end();
-  });
-} else {
-  wheel.classList.remove('mobile');
-  wheel.classList.add('large');
-  spinBtn.addEventListener('click', () => {
-    move('.wheel_box.large').set('margin-right', 'calc((100vw - 100vmin) / 2)').duration('0.8s').delay('0.3s').end();
-  });
+const mediaQuery = window.matchMedia('(max-width: 1279px)');
+
+function windowChange(e) {
+  // Check if the media query is true
+  if (e.matches) {
+    spinBtn.addEventListener('click', () => {
+      move('.wheel_box.mobile').set('margin-top', 'calc((100vh - 100vmin) / 2)').duration('0.8s').delay('0.3s').end();
+    });
+    wheel.classList.add('mobile');
+    wheel.classList.remove('large');
+  } else {
+    wheel.classList.remove('mobile');
+    wheel.classList.add('large');
+    spinBtn.addEventListener('click', () => {
+      move('.wheel_box.large').set('margin-right', 'calc((100vw - 100vmin) / 2)').duration('0.8s').delay('0.3s').end();
+    });
+  }
 }
+// Register event listener
+mediaQuery.addListener(windowChange);
+
+// Initial check
+windowChange(mediaQuery);
 
 function wheelAnimate() {
   move('.offer_title').set('margin-left', '-100vw').duration('0.3s').end();
@@ -29,4 +41,3 @@ function wheelAnimate() {
    }
   );
 }
-
