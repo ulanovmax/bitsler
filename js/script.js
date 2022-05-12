@@ -11,11 +11,11 @@ const mediaQuery = window.matchMedia('(max-width: 1279px)');
 function windowChange(e) {
   // Check if the media query is true
   if (e.matches) {
+    wheel.classList.add('mobile');
+    wheel.classList.remove('large');
     spinBtn.addEventListener('click', () => {
       move('.wheel_box.mobile').set('margin-top', 'calc((100vh - 100vmin) / 2)').duration('0.8s').delay('0.3s').end();
     });
-    wheel.classList.add('mobile');
-    wheel.classList.remove('large');
   } else {
     wheel.classList.remove('mobile');
     wheel.classList.add('large');
@@ -24,6 +24,7 @@ function windowChange(e) {
     });
   }
 }
+
 // Register event listener
 mediaQuery.addListener(windowChange);
 
