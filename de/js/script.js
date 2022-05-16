@@ -34,7 +34,7 @@ windowChange(mediaQuery);
 function wheelAnimate() {
   move('.offer_title').set('margin-left', '-100vw').duration('0.3s').end();
   move('.subtitle').set('margin-left', '-175vw').duration('0.4s').delay('0.1s').end();
-  move('.btn_wrap').set('margin-left', '-100vw').duration('0.5s').delay('0.2s').end();
+  move('.btn_wrap').set('margin-left', '-175vw').duration('0.5s').delay('0.2s').end();
   move('.wheel').rotate(1642).ease('cubic-bezier(.53, .12, .25, 1.19)').duration('8.4s').delay('1.5s').end(
    function () {
     move('.pop_up').set('display', 'flex').end();

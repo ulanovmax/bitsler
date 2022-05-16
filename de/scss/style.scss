@@ -238,8 +238,8 @@ img {
   align-items: center;
   background: rgba(50, 63, 77, 0.9);
   z-index: 1000;
-  // display: none;
-  // opacity: 0;
+  display: none;
+  opacity: 0;
 }
 
 // Pop Up
@@ -367,7 +367,7 @@ img {
     .btn {
       max-width: rem(360);
       height: rem(70); 
-      font-size: rem(24);
+      font-size: rem(28);
     }
   }
 

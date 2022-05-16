@@ -381,6 +381,8 @@ img {
   align-items: center;
   background: rgba(50, 63, 77, 0.9);
   z-index: 1000;
+  display: none;
+  opacity: 0;
 }
 
 .pop_up_content {
@@ -508,7 +510,7 @@ img {
   .pop_up_offer .btn {
     max-width: 22.5rem;
     height: 4.375rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 @media screen and (min-width: 64rem) {
