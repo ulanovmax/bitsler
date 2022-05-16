@@ -238,8 +238,8 @@ img {
   align-items: center;
   background: rgba(50, 63, 77, 0.9);
   z-index: 1000;
-  display: none;
-  opacity: 0;
+  // display: none;
+  // opacity: 0;
 }
 
 // Pop Up
@@ -296,6 +296,8 @@ img {
   @media (min-width: rem(768)) {
     max-width: rem(800);
     height: rem(800);
+    // background: url("../img/tablet_pop_up.png") no-repeat center / contain;
+    // background-position: rem(-4);
   }
 
   @media (min-width: rem(1024)) {
@@ -322,18 +324,18 @@ img {
   left: 0;
   top: 46px;
   h2 {
-    font-size: rem(40);
+    font-size: rem(30);
     color: #fff;
-    margin-bottom: rem(14);
+    margin-bottom: rem(10);
   }
 
   .subtitle {
-    margin-bottom: rem(16);
+    margin-bottom: rem(10);
     color: #fff;
   }
 
   .btn {
-    max-width: rem(216);
+    max-width: rem(190);
     font-size: rem(14);
     height: rem(40);
     animation: blink 1.5s infinite;
@@ -343,7 +345,7 @@ img {
   @media screen and (min-width: rem(360)) {
     top: rem(54);
     .subtitle {
-      margin-bottom: rem(26);
+      margin-bottom: rem(16);
     }
     .btn {
       height: rem(46);
@@ -359,7 +361,7 @@ img {
 
     .subtitle {
       margin-bottom: rem(60);
-      line-height: rem(30);
+      line-height: rem(36);
     }
 
     .btn {

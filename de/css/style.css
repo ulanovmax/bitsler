@@ -381,8 +381,6 @@ img {
   align-items: center;
   background: rgba(50, 63, 77, 0.9);
   z-index: 1000;
-  display: none;
-  opacity: 0;
 }
 
 .pop_up_content {
@@ -469,16 +467,16 @@ img {
   top: 46px;
 }
 .pop_up_offer h2 {
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   color: #fff;
-  margin-bottom: 0.875rem;
+  margin-bottom: 0.625rem;
 }
 .pop_up_offer .subtitle {
-  margin-bottom: 1rem;
+  margin-bottom: 0.625rem;
   color: #fff;
 }
 .pop_up_offer .btn {
-  max-width: 13.5rem;
+  max-width: 11.875rem;
   font-size: 0.875rem;
   height: 2.5rem;
   animation: blink 1.5s infinite;
@@ -489,7 +487,7 @@ img {
     top: 3.375rem;
   }
   .pop_up_offer .subtitle {
-    margin-bottom: 1.625rem;
+    margin-bottom: 1rem;
   }
   .pop_up_offer .btn {
     height: 2.875rem;
@@ -505,7 +503,7 @@ img {
   }
   .pop_up_offer .subtitle {
     margin-bottom: 3.75rem;
-    line-height: 1.875rem;
+    line-height: 2.25rem;
   }
   .pop_up_offer .btn {
     max-width: 22.5rem;
